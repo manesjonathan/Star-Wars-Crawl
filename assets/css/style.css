@@ -1,6 +1,4 @@
 body {
-    width: 100%;
-    height: 100%;
     background-image: url(../image/background.jpg);
     overflow: hidden;
 }
@@ -10,7 +8,7 @@ body {
     justify-content: center;
     position: relative;
     height: 800px;
-    color: #feda4a;
+    color: lightblue;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 500%;
     font-weight: 600;
@@ -22,7 +20,6 @@ body {
 
 .scroll {
     position: relative;
-    top: 9999px;
     transform-origin: 50% 100%;
     animation: scroll 60s linear;
 }
@@ -44,4 +41,12 @@ h1 {
         top: -6000px;
         transform: rotateX(25deg) translateZ(-2500px);
     }
+}
+
+
+img{
+    margin: 10px;
+    position: fixed;
+    width: 15%;
+    height: auto;
 }
