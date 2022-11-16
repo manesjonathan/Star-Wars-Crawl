@@ -1,21 +1,56 @@
-body{
+body {
+    width: 100%;
+    height: 100%;
     background-image: url(../image/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 75%;
-    margin: auto;
+    overflow: hidden;
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+}
+
+.star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+}
+
+.scroll {
+    position: relative;
+    top: 9999px;
+    transform-origin: 50% 100%;
+    animation: scroll 60s linear;
+}
+
+h1 {
+    font-size: 200%;
     text-align: center;
-    font-size: 2em;
-    letter-spacing: .2rem;
-
-    
+    text-transform: uppercase;
 }
 
-h1{
-    color: blue;
-}
 
-p{
-    color: white;
+@keyframes scroll {
+    0% {
+        top: 0;
+        transform: rotateX(20deg) translateZ(0);
+    }
+
+    100% {
+        top: -6000px;
+        transform: rotateX(25deg) translateZ(-2500px);
+    }
 }
