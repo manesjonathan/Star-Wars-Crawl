@@ -1,0 +1,21 @@
+body{
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 75%;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: .2rem;
+
+    
+}
+
+h1{
+    color: blue;
+}
+
+p{
+    color: white;
+}
